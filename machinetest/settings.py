@@ -130,4 +130,4 @@ REST_FRAMEWORK = {
 }
 
 # Add the directory containing DRF templates here
-TEMPLATES[0]['DIRS'].append(BASE_DIR / 'path/to/your/drf/templates/')
+TEMPLATES[0]['DIRS'].append(BASE_DIR / 'C:\Windows\System32\machinetest\machine\templates\index.html')
