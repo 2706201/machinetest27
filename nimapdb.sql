@@ -120,8 +120,8 @@ CREATE TABLE `auth_user` (
 --
 
 INSERT INTO `auth_user` (`id`, `password`, `last_login`, `is_superuser`, `username`, `first_name`, `last_name`, `email`, `is_staff`, `is_active`, `date_joined`) VALUES
-(1, 'pbkdf2_sha256$720000$JMnFTJOfZbA3QwW7eBmhqR$hdTUYLSZ219pq2oo5+xxh0VrsNn7g9wtZrMqiHaif2c=', NULL, 1, 'sankalp', '', '', 'sankalprane824@gmail.com', 1, 1, '2024-03-27 08:40:40.930657'),
-(2, 'pbkdf2_sha256$720000$WDuvpTDKhoaVr9UXsYA3bs$/KpM1/g/C4Rxs5PNekVzTFKvlC+Idj4Joj9YHR21E3Y=', NULL, 1, 'Darshan', '', '', 'sankalprane324@gmail.com', 1, 1, '2024-03-27 08:41:14.598357');
+(1, 'pbkdf2_sha256$720000$JMnFTJOfZbA3QwW7eBmhqR$hdTUYLSZ219pq2oo5+xxh0VrsNn7g9wtZrMqiHaif2c=', NULL, 1, 'priti', '', '', 'pritimore078@gmail.com', 1, 1, '2024-04-03 08:40:40.930657'),
+(2, 'pbkdf2_sha256$720000$WDuvpTDKhoaVr9UXsYA3bs$/KpM1/g/C4Rxs5PNekVzTFKvlC+Idj4Joj9YHR21E3Y=', NULL, 1, 'machine', '', '', 'pritimore078@gmail.com', 1, 1, '2024-04-03 08:41:14.598357');
 
 -- --------------------------------------------------------
 
@@ -213,8 +213,8 @@ INSERT INTO `django_content_type` (`id`, `app_label`, `model`) VALUES
 (2, 'auth', 'permission'),
 (4, 'auth', 'user'),
 (5, 'contenttypes', 'contenttype'),
-(7, 'SankalpTestApp', 'client'),
-(8, 'SankalpTestApp', 'project'),
+(7, 'machine', 'client'),
+(8, 'machine', 'project'),
 (6, 'sessions', 'session');
 
 -- --------------------------------------------------------
@@ -237,7 +237,7 @@ CREATE TABLE `django_migrations` (
 INSERT INTO `django_migrations` (`id`, `app`, `name`, `applied`) VALUES
 (1, 'contenttypes', '0001_initial', '2024-03-27 08:36:31.557302'),
 (2, 'auth', '0001_initial', '2024-03-27 08:36:32.303919'),
-(3, 'SankalpTestApp', '0001_initial', '2024-03-27 08:36:32.655686'),
+(3, 'machineo', '0001_initial', '2024-03-27 08:36:32.655686'),
 (4, 'admin', '0001_initial', '2024-03-27 08:36:32.894921'),
 (5, 'admin', '0002_logentry_remove_auto_add', '2024-03-27 08:36:32.904047'),
 (6, 'admin', '0003_logentry_add_action_flag_choices', '2024-03-27 08:36:32.918007'),
@@ -552,6 +552,3 @@ ALTER TABLE `project_users`
   ADD CONSTRAINT `Project_users_user_id_d90e6565_fk_auth_user_id` FOREIGN KEY (`user_id`) REFERENCES `auth_user` (`id`);
 COMMIT;
 
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
